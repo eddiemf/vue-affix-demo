@@ -1,9 +1,12 @@
+import Vue from 'vue';
 import Scrollactive from 'vue-scrollactive';
 import Affix from 'vue-affix';
 
 Vue.use(Affix);
 Vue.use(Scrollactive);
 
-export default new Vue({
+const app = new Vue({
   el: '#app',
 });
+
+export default app;

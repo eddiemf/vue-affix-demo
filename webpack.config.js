@@ -8,12 +8,17 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
   },
+  resolve: {
+    alias: {
+      vue: 'vue/dist/vue.js',
+    },
+  },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader'],
       },
       {
         test: /\.vue$/,
