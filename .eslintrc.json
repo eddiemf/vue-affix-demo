@@ -1,0 +1,12 @@
+{
+  "root": true,
+  "extends": "airbnb-base",
+  "plugins": ["html"],
+  "env": {
+    "browser": true
+  },
+  "globals": { 
+    "Vue": true 
+  },
+  "parser": "babel-eslint"
+}
